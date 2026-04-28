@@ -37,8 +37,8 @@ This is the starting point for any new patient walk-in. Staff can fill in all th
 
 
 
-<div align="center">
-    <img src="/public/assets/PatientRegistration.png" width="500"/>
+<div align="center" >
+    <img src="/public/assets/PatientRegistration.png" width="500" hspace="20"/>
 </div>
 
 
@@ -55,7 +55,7 @@ After registration, the next step is getting a patient's vitals on record. This 
 
 
 <div align="center">
-    <img src="/public/assets/Vitals.png" width="500"/>
+    <img src="/public/assets/Vitals.png" width="500" hspace="20"/>
 </div>
 
 
@@ -72,7 +72,7 @@ The Doctor's Portal is the physician's side of the app. Doctors have their own s
 
 
 <div align="center">
-    <img src="/public/assets/DoctorPortal.png" width="500"/>
+    <img src="/public/assets/DoctorPortal.png" width="500" hspace="20"/>
 </div>
 
 
@@ -89,7 +89,7 @@ This is where the consultation wraps up. After reviewing a patient's details, th
 
 
 <div align="center">
-    <img src="/public/assets/DoctorPrescription.png" width="500"/>
+    <img src="/public/assets/DoctorPrescription.png" width="500" hspace="20"/>
 </div>
 
 
