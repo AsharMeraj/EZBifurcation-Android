@@ -1,11 +1,11 @@
-# Digital Clinic Desktop 🏥
+# EZBifurcation 📱
 
-> A desktop app for managing patients, vitals, and doctor consultations — built with Next.js and Electron.
+> An Android app for managing patient registrations, vitals, and doctor consultations — built for clinics that need things done on the go.
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Electron](https://img.shields.io/badge/Electron-Desktop-47848F?style=flat-square&logo=electron)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)
+![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android)
+![Kotlin](https://img.shields.io/badge/Kotlin-Language-7F52FF?style=flat-square&logo=kotlin)
+![XML](https://img.shields.io/badge/UI-XML%20Layouts-orange?style=flat-square)
+![Retrofit](https://img.shields.io/badge/Networking-Retrofit-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ---
@@ -15,8 +15,8 @@
 - [Overview](#overview)
 - [Patient Registration](#patient-registration)
 - [Vitals](#vitals)
-- [Doctor's Portal](#doctors-portal)
-- [Doctor's Prescription](#doctors-prescription)
+- [Doctors Portal](#doctors-portal)
+- [Doctors Prescription](#doctors-prescription)
 - [Tech Stack](#tech-stack)
 - [License](#license)
 
@@ -24,51 +24,51 @@
 
 ## Overview
 
-I built Digital Clinic Desktop to give clinics a single, organized place to handle everything — from patient intake to doctor consultations. It runs as a native desktop app and covers the full workflow a clinic goes through during a typical patient visit. The app has separate flows for front-desk staff and doctors, so everyone only sees what they need. All data moves through a central API layer, keeping things consistent across the board.
+I built EZBifurcation to bring clinic management onto Android — no desktop required. The app covers the full patient workflow, from first-time registration all the way through to a doctor's final prescription, with separate flows for staff and physicians. Everything talks to a backend API so data stays in sync across the clinic. The goal was to keep it practical and fast to use, even for staff who aren't particularly tech-savvy.
 
 ---
 
 ## 👤 Patient Registration
 
-This is where every patient journey starts. Staff can register new patients or pull up existing ones and make updates on the spot. The form captures all the key demographic details — name, age, contact info, and more — in a clean, simple layout that doesn't get in the way. I made sure the fields are straightforward so even non-technical staff can get through registration quickly.
+This is the starting point for any new patient walk-in. Staff can fill in all the key demographic details — name, age, contact info, and other identifiers — and get the patient into the system within a minute. Returning patients can be looked up and updated just as quickly. I kept the form layout clean so there's no guesswork involved.
 
-- Register new patients or update existing patient records with ease
-- Demographic data is validated and stored through the backend API for reliable retrieval across sessions
+- Register new patients or update existing records directly from the app
+- Patient data is saved to the backend and immediately available across all other sections
 
-<img src="/public/assets/PatientRegistration.png" width="800"/>
+<img src="/public/assets/PatientRegistration.png" width="500"/>
 
 ---
 
 ## 📊 Vitals
 
-Once a patient is registered, the next step is recording their vitals. This section lets staff log readings like blood pressure, heart rate, temperature, and more, all tied to the specific patient. Each reading is displayed in its own card so it's easy to scan at a glance. Historical vitals can also be reviewed here, giving doctors useful context before a consultation.
+After registration, the next step is getting a patient's vitals on record. This screen lets staff log readings like blood pressure, heart rate, temperature, and oxygen levels, all linked to the patient's profile. Each vital shows up in its own card so it's quick to scan. Doctors can reference this history when they're ready to consult.
 
-- Log and track key patient vitals in a structured, card-based layout
-- Vital history is persisted per patient, making it available during consultations
+- Log and store patient vitals with each entry tied to the correct patient profile
+- Historical vital data is displayed in a card-based layout for easy review before consultations
 
-<img src="/public/assets/Vitals.png" width="800"/>
+<img src="/public/assets/Vitals.png" width="500"/>
 
 ---
 
 ## 🩺 Doctor's Portal
 
-The Doctor's Portal is where physicians take over. Doctors sign in separately from front-desk staff and get access to patient information, their recorded vitals, and the tools they need to carry out a consultation. The portal also handles doctor registration and profile management, so onboarding a new doctor to the system is straightforward. I kept the navigation tight here — doctors can move between patient data and consultation tools without losing their place.
+The Doctor's Portal is the physician's side of the app. Doctors have their own sign-in flow and land in a dedicated space where they can view patient demographics, check recorded vitals, and kick off a consultation. The portal also handles doctor registration and profile management, so adding a new doctor to the system takes no time. I made sure the navigation here is tight — switching between patient info and consultation tools is straightforward.
 
-- Separate doctor sign-in and profile management built right into the portal
-- Doctors get a focused view of patient demographics and vitals before starting a consultation
+- Separate doctor authentication with profile management built into the portal
+- Full access to patient demographics and vitals before starting any consultation
 
-<img src="/public/assets/DoctorPortal.png" width="800"/>
+<img src="/public/assets/DoctorPortal.png" width="500"/>
 
 ---
 
 ## 📝 Doctor's Prescription
 
-This is the core of the consultation flow. After reviewing a patient's data, the doctor can record their diagnosis, write out prescriptions, and add any notes — all from one screen. I used multi-select and single-select components here to make picking diagnoses and medications faster and less error-prone. Once the consultation is complete, the prescription is saved and can be referenced later.
+This is where the consultation wraps up. After reviewing a patient's details, the doctor can record a diagnosis, write out prescriptions, and add any notes — all from one screen. I used structured selection components to make picking diagnoses and medications faster and less error-prone. The completed prescription gets saved against the patient's record so it's always there to reference later.
 
-- Write and save prescriptions with structured diagnosis and medication selection
-- Consultation notes and records are tied to the patient for future reference
+- Write structured prescriptions with diagnosis and medication selection built right in
+- Consultation records and notes are saved per patient for future reference
 
-<img src="/public/assets/DoctorPrescription.png" width="800"/>
+<img src="/public/assets/DoctorPrescription.png" width="500"/>
 
 ---
 
@@ -76,11 +76,11 @@ This is the core of the consultation flow. After reviewing a patient's data, the
 
 | Technology | Purpose |
 |---|---|
-| Next.js 15 | Frontend framework (React-based) |
-| Electron | Desktop app packaging |
-| TypeScript | Type-safe development |
-| Tailwind CSS | Styling and UI design system |
-| PostCSS | CSS processing |
+| Kotlin | Primary development language |
+| Android SDK | Core app framework |
+| XML Layouts | UI design and screen structure |
+| Retrofit | API communication and networking |
+| ViewModel / LiveData | State management across screens |
 
 ---
 
@@ -90,4 +90,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Built with care for clinics that deserve better tools 💙</p>
+<p align="center">Built to make clinic workflows a little less painful 💙</p>
