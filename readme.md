@@ -61,8 +61,9 @@ The Doctor's Portal is the physician's side of the app. Doctors have their own s
 - Separate doctor authentication with profile management built into the portal
 - Full access to patient demographics and vitals before starting any consultation
 
-<img src="/public/assets/DoctorPortal.png" width="500"/>
-
+<div align="center">
+    <img src="/public/assets/DoctorPortal.png" width="500"/>
+</div>
 
 ---
 
