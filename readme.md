@@ -35,9 +35,13 @@ This is the starting point for any new patient walk-in. Staff can fill in all th
 - Register new patients or update existing records directly from the app
 - Patient data is saved to the backend and immediately available across all other sections
 
+
+
 <div align="center">
     <img src="/public/assets/PatientRegistration.png" width="500"/>
 </div>
+
+
 
 ---
 
@@ -48,9 +52,13 @@ After registration, the next step is getting a patient's vitals on record. This 
 - Log and store patient vitals with each entry tied to the correct patient profile
 - Historical vital data is displayed in a card-based layout for easy review before consultations
 
+
+
 <div align="center">
     <img src="/public/assets/Vitals.png" width="500"/>
 </div>
+
+
 
 ---
 
@@ -61,9 +69,13 @@ The Doctor's Portal is the physician's side of the app. Doctors have their own s
 - Separate doctor authentication with profile management built into the portal
 - Full access to patient demographics and vitals before starting any consultation
 
+
+
 <div align="center">
     <img src="/public/assets/DoctorPortal.png" width="500"/>
 </div>
+
+
 
 ---
 
@@ -74,9 +86,13 @@ This is where the consultation wraps up. After reviewing a patient's details, th
 - Write structured prescriptions with diagnosis and medication selection built right in
 - Consultation records and notes are saved per patient for future reference
 
+
+
 <div align="center">
     <img src="/public/assets/DoctorPrescription.png" width="500"/>
 </div>
+
+
 
 ---
 
@@ -89,12 +105,6 @@ This is where the consultation wraps up. After reviewing a patient's details, th
 | XML Layouts | UI design and screen structure |
 | Retrofit | API communication and networking |
 | ViewModel / LiveData | State management across screens |
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
